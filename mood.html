@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mood Tracker 😊</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Mood Tracker 😊</h1>
+
+    <div class="mood-buttons">
+        <button onclick="addMood('😊')">😊</button>
+        <button onclick="addMood('😌')">😌</button>
+        <button onclick="addMood('😴')">😴</button>
+        <button onclick="addMood('😢')">😢</button>
+        <button onclick="addMood('😡')">😡</button>
+    </div>
+
+    <div class="chart-wrapper">
+        <canvas id="moodChart"></canvas>
+    </div>
+
+    <h3 style="margin-top:40px;">Last 7 Days</h3>
+    <div id="moodGrid" class="mood-grid"></div>
+
+    <br>
+    <a href="index.html">← Back</a>
+</div>
+
+<script src="mood.js"></script>
+
+</body>
+</html>
